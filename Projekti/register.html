@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>Roni's Corner | Login/Register</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img id="icon" src="./images/knife.svg" alt="" />
+          <h1>
+           <span class="highlight">Roni's Corner</span>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li class="current"><a href="login_register.html">Login/Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <form id="signUp" class="login">
+        <h1>Sign Up</h1>
+        <input type="text" class="input" placeholder="Name" id="name" />
+        <input
+          type="text"
+          class="input"
+          placeholder="Last name"
+          id="lastName"
+        />
+        <input
+          type="email"
+          name=""
+          placeholder="Email"
+          id="email"
+          class="input-field input"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="Password"
+          id="password"
+          class="input-field input"
+        />
+        <input type="submit" name="" value="Register" onclick="validate(0)" />
+        
+      </form>
+      <div class="to-login">
+        <p>
+          Not a member?
+          <a href="login_register.html">Login</a>
+        </p>
+    </main>
+
+    <footer>
+      <p>Roni's Corner, Copyright &copy; 2017</p>
+    </footer>
+    <script src="./css/validimi.js"></script>
+  </body>
+</html>

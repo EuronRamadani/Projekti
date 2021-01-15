@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Roni's Corner | Login/Register</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body class="main1">
+		<header>
+			<div class="container">
+				<div id="branding">
+					<img id="icon" src="./images/knife.svg" alt="" />
+					<h1>
+						<span class="highlight">Roni's Corner</span>
+					</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="Contact.html">About/Contact</a></li>
+						<li class="current">
+							<a href="login_register.html">Login/Register</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<form class="login" id="signUp">
+				<h1>Login</h1>
+				<input
+					type="text"
+					name=""
+					placeholder="Username"
+					id="username"
+					class="login-in"
+				/>
+				<input
+					type="password"
+					name=""
+					placeholder="Password"
+					id="password"
+					class="login-in"
+				/>
+				<input type="submit" name="" value="Login" onclick="validate(1)" />
+			</form>
+			<div class="to-register">
+				<p>
+					Not a member?
+					<a href="register.html">Sign up</a>
+				</p>
+			</div>
+		</main>
+
+		<footer>
+			<p>Roni's Corner, Copyright &copy; 2017</p>
+		</footer>
+		<script src="./css/validimi.js"></script>
+	</body>
+</html>
