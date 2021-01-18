@@ -32,39 +32,44 @@
       <form id="signUp" class="login">
         <h1>Sign Up</h1>
         <input type="text" class="input" placeholder="Name" id="name" />
+        <div id="emri_error">Please fill up your Name</div>
+
         <input
           type="text"
           class="input"
           placeholder="Last name"
           id="lastName"
         />
+        <div id="mbiemri_error">Please fill up your Mbiemri</div>
+
         <input
           type="email"
           name=""
           placeholder="Email"
-          id="email"
+          id="emailii"
           class="input-field input"
         />
+        <div id="email_error">Please fill up your Email</div>
+
         <input
           type="password"
           name=""
           placeholder="Password"
-          id="password"
+          id="passwordii"
           class="input-field input"
         />
-        <input type="submit" name="" value="Register" onclick="validate(0)" />
-        
+        <div id="pass_error">Please fill up your Password</div>
+        <p id="pass">Password must me at least 8 charact</p>
+        <input type="button" name="" value="Register" id="butoniii" />
+       
       </form>
       <div class="to-login">
-        <p>
-          Not a member?
-          <a href="login_register.html">Login</a>
-        </p>
+       
     </main>
 
     <footer>
       <p>Roni's Corner, Copyright &copy; 2017</p>
     </footer>
-    <script src="./css/validimi.js"></script>
+    <script src="validimi2.js"></script>
   </body>
 </html>

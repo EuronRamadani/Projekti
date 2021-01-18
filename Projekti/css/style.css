@@ -515,6 +515,7 @@ main {
 	padding: 14px 10px;
 	width: 200px;
 	color: rgb(0, 0, 0);
+	margin-bottom: 0;
 }
 
 .login ::placeholder {
@@ -545,9 +546,21 @@ main {
 	color: red;
 	visibility: visible;
 }
-.main {
-	background: url("/images/smothie.jpg") no-repeat;
+#email_error,
+#pass_error,
+#emri_error,
+#mbiemri_error {
+	opacity: 0;
+	font-size: 12px;
+	color: red;
 }
+#pass {
+	font-size: 12px;
+}
+
+/* .main {
+	background: url("/images/smothie.jpg") no-repeat;
+} */
 .to-register {
 	background-color: #e7e4e4;
 	margin-top: 0;
@@ -568,6 +581,9 @@ main {
 .to-login a {
 	color: #2e4816;
 }
+
+/*FOOTER*/
+
 footer {
 	padding: 20px;
 	color: #ffffff;
@@ -628,5 +644,44 @@ footer {
 		width: 90%;
 		left: 5%;
 		display: grid;
+	}
+	.line {
+		display: none;
+	}
+	#button1 {
+		margin-left: 200px;
+	}
+	.wrapper {
+		display: flex;
+		display: inline;
+	}
+	.title {
+		width: 100%;
+		left: 5%;
+		padding: 0 20px;
+	}
+	.Menu {
+		width: 80%;
+		left: 10%;
+		padding: 0 20px;
+	}
+	.login1 {
+		margin-top: 200px;
+	}
+	.pjeset {
+		display: flex;
+		display: inline;
+	}
+	.pjesaDyte {
+		margin-left: 130px;
+	}
+	.pjesaTrete {
+		margin-left: 150px;
+	}
+	.to-register {
+		left: 35%;
+	}
+	.to-login {
+		left: 35%;
 	}
 }
