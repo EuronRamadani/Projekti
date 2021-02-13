@@ -10,7 +10,7 @@
 			crossorigin="anonymous"
 		/>
 		<title>Roni's Corner| Welcome</title>
-		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
 		<header>
@@ -23,12 +23,12 @@
 				</div>
 				<nav>
 					<ul>
+						<li id="Home" class="current"><a href="index.php">Home</a></li>
+						<li><a href="menu.php">Menu</a></li>
+						<li><a href="order.php">Order</a></li>
+						<li><a href="Contact.php">About/Contact</a></li>
+						<li><a href="login_register.php">Login/Register</a></li>
 						<li><a href="dashboard.php">Dashboard</a></li>
-						<li id="Home" class="current"><a href="index.html">Home</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li><a href="order.html">Order</a></li>
-						<li><a href="Contact.html">About/Contact</a></li>
-						<li><a href="login_register.html">Login/Register</a></li>
 					</ul>
 				</nav> 
 			</div>

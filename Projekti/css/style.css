@@ -382,6 +382,10 @@ aside#sidebar .qoute textarea {
 	width: 100px;
 }
 
+.main-order select,
+.main-order input {
+	width: 100% !important;
+}
 /* ContactPage */
 
 #main1 {
@@ -555,7 +559,17 @@ main {
 	color: red;
 }
 #pass {
-	font-size: 12px;
+	font-size: 10px;
+	margin-top: 0;
+}
+
+#buttonii,
+#butoniii {
+	color: #2e4816;
+	background: none;
+	border-radius: 10px;
+	padding: 3px 15px;
+	box-shadow: 1px 1px;
 }
 
 /* .main {
@@ -581,6 +595,44 @@ main {
 .to-login a {
 	color: #2e4816;
 }
+
+/*DASHBOARD*/
+
+.sidebar {
+	background: #2e4816;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+}
+
+.sidebar
+/* #sideMenu {
+	background: #a2ac9a;
+	max-width: 280px;
+}
+
+#sideMenu,
+#navMenu {
+	padding-top: 100px;
+}
+
+#sideMenu,
+#navMenu,
+#a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 30px;
+}
+#sideMenu,
+#navMenu,
+#active {
+	background: rgb(161, 113, 161);
+	border-right: 5px solid #92cf48;
+} */
 
 /*FOOTER*/
 
@@ -648,8 +700,11 @@ footer {
 	.line {
 		display: none;
 	}
+	input#search {
+		border: black;
+	}
 	#button1 {
-		margin-left: 200px;
+		margin-left: 130px;
 	}
 	.wrapper {
 		display: flex;

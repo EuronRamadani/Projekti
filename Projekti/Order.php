@@ -19,13 +19,14 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li class="current"><a href="order.html">Order</a></li>
-						<li><a href="Contact.html">About/Contact</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="menu.php">Menu</a></li>
+						<li class="current"><a href="order.php">Order</a></li>
+						<li><a href="Contact.php">About/Contact</a></li>
 						<li>
-							<a href="login_register.html">Login/Register</a>
+							<a href="login_register.php">Login/Register</a>
 						</li>
+						<li><a href="dashboard.php">Dashboard</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -103,7 +104,7 @@
 		</main>
 
 	<?php 
-		include '/SubComponents/Footer.php';
+		include 'Footer.php';
 	?>
 
 

@@ -19,21 +19,31 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="dashboard.html">Dashboard</a></li>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="menu.php">Menu</a></li>
 						<li><a href="order.php">Order</a></li>
 						<li><a href="Contact.php">About/Contact</a></li>
 						<li class="current">
-							<a href="login_register.html">Login/Register</a>
+							<a href="login_register.php">Login/Register</a>
 						</li>
+						<li><a href="dashboard.php">Dashboard</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main class="main">
-			<form class="login" id="signUp" method="post" action="loginVerify.php">
+		
+			<form class="login" id="signUp" method="POST" action="autozim.php">
 				<h1>Login</h1>
+
+				<h3>
+					<?php 
+					if(isset($_GET['test'])){
+							echo "Te dhenat e juaja nuk jan te sakta!";
+					}
+
+			?>
+		</h3>
 				<input
 					id="emailii"
 					type="text"
@@ -54,8 +64,8 @@
 					class="login-in"
 				/>
 				<div id="pass_error">Please fill up your Password</div>
-				<input id="buttonii" type="button" name="login-btn" value="Login" />
-				<p><a href="register.html">Register</a></p>
+				<input id="buttonii" type="submit" name="login" value="Login" />
+				<p><a href="register.php">Register</a></p>
 			</form>
 		</main>
 
