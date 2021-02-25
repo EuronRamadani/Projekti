@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -14,9 +15,18 @@
 	</head>
 	<body>
 		<header>
+		<?php
+		session_start();
+			if($_SESSION['autorizimiii'] == 1){
+		
+		?>
+			<label for="check">
+				<a href="dashboard.php"><i class="fas fa-bars" id="sidebar_btn"></i></a>
+			</label>
+			  <?php } ?>
 			<div class="container">
 				<div id="branding">
-					<img id="icon" src="./images/knife.svg" alt="" />
+					<a href="index.php"><img id="icon" src="./images/knife.svg" alt="" /></a>
 					<h1>
 						<span class="highlight">Roni's Corner</span>
 					</h1>
@@ -28,36 +38,34 @@
 						<li><a href="order.php">Order</a></li>
 						<li><a href="Contact.php">About/Contact</a></li>
 						<li><a href="login_register.php">Login/Register</a></li>
-						<li><a href="dashboard.php">Dashboard</a></li>
 					</ul>
 				</nav> 
 			</div>
 		</header>
-
 		<section id="showcase">
 			<div class="overlay">
 				<div class="container">
+
+					
 					<h2 id="h1"><i>Are you hungry?</i></h2>
 					<h1>Don't wait!</h1>
+
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sunt
-						sint temporibus vitae deserunt accusamus necessitatibus repellat
-						accusantium, reprehenderit beatae, neque pariatur atque!
+						I opened because i jave always had a passion
+						for the restaurant industry and saw a void 
+						in the market that i thought i could fill
+
 					</p>
-					<a href="#menu" id="button1" class="button">Go to Menu</a>
+				
+					<a href="#menu" id="button1" class="button">Go to Offers</a>
 				</div>
 				<div class="container line">
 					<input id="search" type="text" placeholder="Search" />
 					<button>Search</button>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-						deleniti, molestias, fugiat eaque aperiam sequi minima quam deserunt
-						tempore dolorum odit dolores quisquam non nesciunt maiores iure
-						velit itaque ad voluptatum mollitia aliquam minus. Explicabo,
-						nesciunt perferendis praesentium, minima quisquam doloremque
-						reiciendis reprehenderit saepe officia, pariatur dolorem sed fugiat
-						non.
-					</p>
+				
+					<p><i><b> you gotta nourish to flourish</b></i></p>
+					<p><i><b>goodies for the foodies</b></i></p>
+					<p><i><b>food is always a good idea</b></i></p>
 				</div>
 			</div>
 		</section>
@@ -99,28 +107,28 @@
 		<section id="menu" class="menu">
 			<div class="container menu-container">
 				<div class="menu-item">
-					<img src="./images/salad.jpg" alt="" />
-					<h5>Lorum</h5>
-					<span class="price">20$</span>
-					<a href="#" class="button">Order Now</a>
+					<img src="images/salad.jpg" alt="" />
+					<h5>Italian Salad</h5>
+					<span class="price">5.60$</span>
+					<a href="order.php" class="button">Order Now</a>
 				</div>
 				<div class="menu-item">
 					<img src="./images/2.jpg" alt="" height="135px" />
-					<h5>Ipsum</h5>
-					<span class="price">20$</span>
-					<a href="#" class="button">Order Now</a>
+					<h5>Mix Salad</h5>
+					<span class="price">7.00$</span>
+					<a href="order.php" class="button">Order Now</a>
 				</div>
 				<div class="menu-item">
 					<img src="./images/3.webp" alt="" />
-					<h5>ITEM</h5>
-					<span class="price">20$</span>
-					<a href="#" class="button">Order Now</a>
+					<h5>Meat with souce</h5>
+					<span class="price">13.50$</span>
+					<a href="order.php" class="button">Order Now</a>
 				</div>
 				<div class="menu-item">
 					<img src="./images/4.jpg" alt="" height="135px" />
-					<h5>ITEM</h5>
-					<span class="price">20$</span>
-					<a href="#" class="button">Order Now</a>
+					<h5>Snickers Chocolate</h5>
+					<span class="price">4.30$</span>
+					<a href="order.php" class="button">Order Now</a>
 				</div>
 			</div>
 		</section>
@@ -130,12 +138,12 @@
 			<div class="description">
 				<h3>Pancakes 3.50$</h3>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iust o
-					accusantium illo, numquam eligendi facere molestiae aut a corrupti
-					reprehenderit.
+					This is our specialty in our Corner Pancakes that are so delicius and
+					are offerd with chocolate, honey or cheese.
+					<span> There was no time for chit-chat when there were chocolate chip pancakes to be eaten.</span>
 				</p>
 				<div class="button_order">
-					<a href="#">Order</a>
+					<a href="order.php">Order</a>
 				</div>
 			</div>
 		</section>

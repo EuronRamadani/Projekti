@@ -22,6 +22,7 @@ butoni.addEventListener('click', validimi);
 
 
 function validimi(){
+    return true
     if(emri.value == '' || emri.value.length < 1){
         emri.style.borderBottomColor = "red";
         emri_error.style.opacity = '1';

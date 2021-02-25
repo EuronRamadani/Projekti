@@ -1,35 +1,49 @@
-<?php include('databaseConfig.php'); ?>
+<?php include 'databaseConfig.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
   
     <title>Roni's Corner | Login/Register</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <img id="icon" src="./images/knife.svg" alt="" />
-          <h1>
-           <span class="highlight">Roni's Corner</span>
-          </h1>
-        </div>
-        <nav>
-          <ul>
-          
-            <li><a href="index.php">Home</a></li>
-            <li><a href="menu.php">Menu</a></li>
-            <li><a href="order.php">Order</a></li>
-            <li><a href="Contact.php">Contact</a></li>
-            <li class="current"><a href="login_register.php">Login/Register</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header>
+		<?php
+    session_start();
+			if($_SESSION['autorizimiii'] == 1){
+		
+		?>
+			<label for="check">
+				<a href="dashboard.php"><i class="fas fa-bars" id="sidebar_btn"></i></a>
+			</label>
+			  <?php } ?>
+			<div class="container">
+				<div id="branding">
+					<a href="index.php"><img id="icon" src="./images/knife.svg" alt="" /></a>
+					<h1>
+						<span class="highlight">Roni's Corner</span>
+					</h1>
+				</div>
+				<nav>
+					<ul>
+						<li id="Home"><a href="index.php">Home</a></li>
+						<li class="current"><a href="menu.php">Menu</a></li>
+						<li><a href="order.php">Order</a></li>
+						<li><a href="Contact.php">About/Contact</a></li>
+						<li><a href="login_register.php">Login/Register</a></li>
+					</ul>
+				</nav> 
+			</div>
+		</header>
     <?php 
           if(isset($_POST['RegisterSubmit'])){             
             $Name      = $_POST['name'];

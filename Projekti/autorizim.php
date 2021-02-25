@@ -28,6 +28,7 @@
             $idUsers  = $row['idUsers']; 
             $name     = $row['name'];
             $lastName = $row['lastName'];
+            $blloku   = $row['blloku'];
 
            }
           // if iduser is empty this user don't exist in database
@@ -37,7 +38,14 @@
                 $_SESSION['name']    = $name;
                 $_SESSION['lastName']    = $lastName;
                 $_SESSION['Autorizimi']    = "GoInside";
-                header("Location:dashboard.php");
+ 
+                if($blloku == 1){
+                  $_SESSION['autorizimiii'] = 1;
+                   header("Location:dashboard.php");
+                }else{
+                  $_SESSION['autorizimiii'] = 2;
+ header("Location:index.php");
+                }
           }else{
         header("Location:login_register.php?test=2");
         // echo $idUser;

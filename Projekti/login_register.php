@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
 
 		<title>Roni's Corner | Login/Register</title>
 		<link rel="stylesheet" href="./css/style.css" />
@@ -10,25 +16,31 @@
 
 	<body class="main1">
 		<header>
+				<?php
+				session_start();
+				if($_SESSION['autorizimiii'] == 1){
+		
+		?>
+			<label for="check">
+				<a href="dashboard.php"><i class="fas fa-bars" id="sidebar_btn"></i></a>
+			</label>
+			  <?php } ?>
 			<div class="container">
 				<div id="branding">
-					<img id="icon" src="./images/knife.svg" alt="" />
+					<a href="index.php"><img id="icon" src="./images/knife.svg" alt="" /></a>
 					<h1>
 						<span class="highlight">Roni's Corner</span>
 					</h1>
 				</div>
 				<nav>
 					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="menu.php">Menu</a></li>
+						<li id="Home"><a href="index.php">Home</a></li>
+						<li class="current"><a href="menu.php">Menu</a></li>
 						<li><a href="order.php">Order</a></li>
 						<li><a href="Contact.php">About/Contact</a></li>
-						<li class="current">
-							<a href="login_register.php">Login/Register</a>
-						</li>
-						<li><a href="dashboard.php">Dashboard</a></li>
+						<li><a href="login_register.php">Login/Register</a></li>
 					</ul>
-				</nav>
+				</nav> 
 			</div>
 		</header>
 		<main class="main">
@@ -36,14 +48,14 @@
 			<form class="login" id="signUp" method="POST" action="autozim.php">
 				<h1>Login</h1>
 
-				<h3>
+				<h4 id="h4">
 					<?php 
 					if(isset($_GET['test'])){
-							echo "Te dhenat e juaja nuk jan te sakta!";
+							echo "Te dhenat e juaja nuk jane te sakta!";
 					}
 
-			?>
-		</h3>
+					?>
+				</h4>
 				<input
 					id="emailii"
 					type="text"
